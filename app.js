@@ -80,11 +80,11 @@
 // y devuelva true si dicha fracción es mayor a 1 o false de lo contrario
 
 function esFraccionMayorAUno(fraccion) {
-  let resultado = Number("fraccion");
+  let resultado = parseFloat(fraccion);
 
   console.log(resultado > 1);
 }
 
-esFraccionMayorAUno("1/2"); // false
-esFraccionMayorAUno("2/2"); // false
+// esFraccionMayorAUno("1/2"); // false
+//esFraccionMayorAUno("2/2"); // false
 esFraccionMayorAUno("4/2"); // true
