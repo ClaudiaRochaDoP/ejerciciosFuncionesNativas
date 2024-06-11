@@ -79,12 +79,26 @@
 // Crear una función esFraccionMayorAUno que tome como argumento un string fraccion (en el formato 'numerador/denominador')
 // y devuelva true si dicha fracción es mayor a 1 o false de lo contrario
 
-function esFraccionMayorAUno(fraccion) {
-  let resultado = parseFloat(fraccion);
+// function esFraccionMayorAUno(fraccion) {
+//   let resultado = parseFloat(fraccion);
 
-  console.log(resultado > 1);
-}
+//   console.log(resultado > 1);
+// }
 
 // esFraccionMayorAUno("1/2"); // false
 //esFraccionMayorAUno("2/2"); // false
-esFraccionMayorAUno("4/2"); // true
+// esFraccionMayorAUno("4/2"); // true
+
+/* ------------------------------------------ */
+//capitalizar(str)
+
+// Crear una función capitalizar que tome como argumento un string str
+// y devuelva el mismo string con la primera letra en mayúscula
+
+// function capitalizar(string) {
+//   let mayuscula = string.charAt(0).toUpperCase();
+//   console.log(string.replace(string.charAt(0), mayuscula));
+// }
+
+// capitalizar("lovelace"); // 'Lovelace'
+// capitalizar("había una vez..."); // 'Había una vez...'
