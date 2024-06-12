@@ -102,3 +102,34 @@
 
 // capitalizar("lovelace"); // 'Lovelace'
 // capitalizar("había una vez..."); // 'Había una vez...'
+
+/* ------------------------------------------ */
+//aHackerSpeak(str)
+
+// Crear una función aHackerSpeak que tome como argumento un string str
+// y el mismo string convertido a H4CK3R 5P3AK, siguiendo las siguientes reglas:
+
+function aHackerSpeak(string) {
+  //console.log(string.replace(/i|e|a|s|o/g, `1`));
+  let cambioUno = string.replace(/i/i, `1`);
+  let cambioDos = cambioUno.replace(/e/i, `3`);
+  // console.log(cambioDos);
+  let cambioTres = cambioDos.replace(/a/i, `4`);
+  // console.log(cambioTres);
+  let cambioCuatro = cambioTres.replace(/s/i, `5`);
+  //console.log(cambioCuatro);
+  let cambioCinco = cambioCuatro.replace(/o/i, `0`);
+  console.log(cambioCinco);
+}
+
+//console.log(string.replace(/i|e|a|s|o/g, `1`));
+
+// - Las i se transforman en 1
+// - Las e se transforman en 3
+// - Las a se transforman en 4
+// - Las s se transforman en 5
+// - Las 0 se transforman en 0
+
+aHackerSpeak("javascript"); // 'j4v45cr1pt'
+aHackerSpeak("soy una hacker"); // '50y un4 h4ck3r'
+aHackerSpeak("ADA LOVELACE"); // '4D4 L0V3L4C3'
