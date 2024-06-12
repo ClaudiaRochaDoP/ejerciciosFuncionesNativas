@@ -123,18 +123,18 @@
 // }
 
 /* otra opcion */
-function aHackerSpeak(string) {
-  //console.log(string.replace(/i|e|a|s|o/g, `1`));
-  let cambioUno = string.replace(/i/gi, `1`);
-  let cambioDos = cambioUno.replace(/e/gi, `3`);
-  // console.log(cambioDos);
-  let cambioTres = cambioDos.replace(/a/gi, `4`);
-  // console.log(cambioTres);
-  let cambioCuatro = cambioTres.replace(/s/gi, `5`);
-  //console.log(cambioCuatro);
-  let cambioCinco = cambioCuatro.replace(/o/gi, `0`);
-  console.log(cambioCinco);
-}
+// function aHackerSpeak(string) {
+//   //console.log(string.replace(/i|e|a|s|o/g, `1`));
+//   let cambioUno = string.replace(/i/gi, `1`);
+//   let cambioDos = cambioUno.replace(/e/gi, `3`);
+//   // console.log(cambioDos);
+//   let cambioTres = cambioDos.replace(/a/gi, `4`);
+//   // console.log(cambioTres);
+//   let cambioCuatro = cambioTres.replace(/s/gi, `5`);
+//   //console.log(cambioCuatro);
+//   let cambioCinco = cambioCuatro.replace(/o/gi, `0`);
+//   console.log(cambioCinco);
+// }
 
 // //console.log(string.replace(/i|e|a|s|o/g, `1`));
 
@@ -144,6 +144,21 @@ function aHackerSpeak(string) {
 // - Las s se transforman en 5
 // - Las 0 se transforman en 0
 
-aHackerSpeak("javascript"); // 'j4v45cr1pt'
-aHackerSpeak("soy una hacker"); // '50y un4 h4ck3r'
-aHackerSpeak("ADA LOVELACE"); // '4D4 L0V3L4C3'
+// aHackerSpeak("javascript"); // 'j4v45cr1pt'
+// aHackerSpeak("soy una hacker"); // '50y un4 h4ck3r'
+// aHackerSpeak("ADA LOVELACE"); // '4D4 L0V3L4C3'
+
+/* ------------------------------------------ */
+// obtenerPrimeraOracion(str)
+
+// Crear una función obtenerPrimeraOracion que tome como argumento un string str y la primera oración de dicho string
+
+function obtenerPrimeraOracion(string) {
+  let puntuacion = string.split(".");
+  console.log(puntuacion[0]);
+}
+
+obtenerPrimeraOracion("A mí no me preguntes, sólo soy una oración"); // 'A mí no me preguntes, sólo soy una oración'
+obtenerPrimeraOracion(
+  "Tengo varias oraciones. Esta es la segunda. Y esta es la tercera."
+); // 'Tengo varias oraciones.'
