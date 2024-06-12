@@ -79,15 +79,15 @@
 // Crear una función esFraccionMayorAUno que tome como argumento un string fraccion (en el formato 'numerador/denominador')
 // y devuelva true si dicha fracción es mayor a 1 o false de lo contrario
 
-function esFraccionMayorAUno(fraccion) {
-  let operandos = fraccion.split("/");
-  let resultado = parseFloat(operandos[0]) / parseFloat(operandos[1]);
-  console.log(resultado > 1);
-}
+// function esFraccionMayorAUno(fraccion) {
+//   let operandos = fraccion.split("/");
+//   let resultado = parseFloat(operandos[0]) / parseFloat(operandos[1]);
+//   console.log(resultado > 1);
+// }
 
-esFraccionMayorAUno("1/2"); // false
-esFraccionMayorAUno("2/2"); // false
-esFraccionMayorAUno("4/2"); // true
+// esFraccionMayorAUno("1/2"); // false
+// esFraccionMayorAUno("2/2"); // false
+// esFraccionMayorAUno("4/2"); // true
 
 /* ------------------------------------------ */
 //capitalizar(str)
@@ -122,7 +122,21 @@ esFraccionMayorAUno("4/2"); // true
 //   console.log(cambioCinco);
 // }
 
-//console.log(string.replace(/i|e|a|s|o/g, `1`));
+/* otra opcion */
+function aHackerSpeak(string) {
+  //console.log(string.replace(/i|e|a|s|o/g, `1`));
+  let cambioUno = string.replace(/i/gi, `1`);
+  let cambioDos = cambioUno.replace(/e/gi, `3`);
+  // console.log(cambioDos);
+  let cambioTres = cambioDos.replace(/a/gi, `4`);
+  // console.log(cambioTres);
+  let cambioCuatro = cambioTres.replace(/s/gi, `5`);
+  //console.log(cambioCuatro);
+  let cambioCinco = cambioCuatro.replace(/o/gi, `0`);
+  console.log(cambioCinco);
+}
+
+// //console.log(string.replace(/i|e|a|s|o/g, `1`));
 
 // - Las i se transforman en 1
 // - Las e se transforman en 3
@@ -130,6 +144,6 @@ esFraccionMayorAUno("4/2"); // true
 // - Las s se transforman en 5
 // - Las 0 se transforman en 0
 
-// aHackerSpeak("javascript"); // 'j4v45cr1pt'
-// aHackerSpeak("soy una hacker"); // '50y un4 h4ck3r'
-// aHackerSpeak("ADA LOVELACE"); // '4D4 L0V3L4C3'
+aHackerSpeak("javascript"); // 'j4v45cr1pt'
+aHackerSpeak("soy una hacker"); // '50y un4 h4ck3r'
+aHackerSpeak("ADA LOVELACE"); // '4D4 L0V3L4C3'
